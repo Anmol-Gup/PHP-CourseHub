@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+
+th {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 6px;
+}
+tr:nth-of-type(odd) { 
+    background: #eee; 
+}
+
+.checkout {
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+    /* height: 100px; */
+    text-align: center;
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-radius: 1em;
+}
+
+.checkout h2::before {
+    content: '\20B9';
+}
+
+/* Responsive */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 992px) 
+{
+    .checkout{
+        display: grid;
+        place-items: center;
+        margin: 3em 0;
+    }
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+    /* Hide table headers*/
+    thead th { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+    td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+        text-align: left;
+	}
+    td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		/* white-space: nowrap; */
+	}
+    /*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: "Course Name"; font-weight: bold;}
+	td:nth-of-type(3):before { content: "Price"; font-weight: bold;}
+	td:nth-of-type(4):before { content: "Delete"; font-weight: bold;}
+}

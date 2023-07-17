@@ -1,0 +1,26 @@
+.course_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.description{
+    flex: 2;
+    line-height: 2;
+    padding: 1rem 3rem;
+}
+.card_container{
+    flex:1;   
+}
+@media screen and (max-width:768px){
+    .course_container{
+        flex-direction: column;
+    }
+    .card_container{
+        order: 1;
+    }
+    .description{
+        padding: 1rem 2rem;
+        order: 2;
+    }
+}

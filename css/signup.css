@@ -1,0 +1,90 @@
+/* *{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+} */
+.container{
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.signup{
+    width: 20rem;
+    border-radius: 0.7em;
+    -webkit-box-shadow: 5px 7px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 7px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 7px 22px 0px rgba(0, 0, 0, 0.75);
+}
+.heading{
+    width: 100%;
+    background-color: #FF2171;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
+}
+.signup h2{
+    text-align: center;
+    margin: 0.5em 0;
+}
+.inputs{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+input:not([type="checkbox"]) {
+    width: 18rem;
+    border: 1px solid #ccc;
+    border-radius: 1.5em;
+    padding: 1em;
+} 
+input:focus{
+    outline: none;
+    border: 2px #2d8cf0 solid;
+}
+.signup_form,.login_form{
+    display: grid;
+    place-items: center;
+    margin: 0 0 1.2em 0; 
+    padding: 1em 0;
+}
+.signup_form a::before{
+    content: 'Already a Member? ';
+    color: black;
+}
+.login_form a::before{
+    content: 'New Member? ';
+    color: black;
+}
+input[type='submit']{
+    color: white;
+    background-color: #FF2171;
+    padding: 0.7em;
+    font-size: 1rem;
+}
+input[type='submit']:hover,input[type='checkbox']:hover{
+    cursor: pointer;
+}
+.check{
+    width: 100%;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#togglePassword{
+    margin: -5.5em -15.625em 0 0;
+    cursor: pointer;
+}
+#togglePassword_signup{
+    margin: -2.75em -15.625em 0 0;
+    cursor: pointer;
+}
