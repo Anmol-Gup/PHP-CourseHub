@@ -15,6 +15,7 @@ Razorpay payment gateway link: https://razorpay.com/docs/payments/server-integra
 6. Xampp
 7. VS Code
 
-## Click on Image to watch demo
+## Demo Video
+https://youtu.be/soB0DB47JzA?si=8Yn6lpWj-nt8h4J4
 
-[![image](https://github.com/Anmol-Gup/PHP-CourseHub/assets/66009201/b75ef9b5-927c-458e-8a42-88080873689c)](https://youtu.be/soB0DB47JzA?si=8Yn6lpWj-nt8h4J4)
+![image](https://github.com/Anmol-Gup/PHP-CourseHub/assets/66009201/b75ef9b5-927c-458e-8a42-88080873689c)
